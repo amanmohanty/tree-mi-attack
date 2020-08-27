@@ -1,2 +1,5 @@
 # tree-mi-attack
-## Membership Inference Attack on Tree-based models leveraging structural white-box information
+This repository contains code and data files of the project "Membership Inference Attack on Tree-based Models Leveraging Structural White-box Information".
+
+Project Description:
+
