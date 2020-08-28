@@ -6,4 +6,4 @@ In this project, we implement membership inference attacks on tree-based models 
 
 The target model being attacked is a tree-based model, Random Forest. We implemented the Sklearn-RandomForestClassifier algorithm. The attack model is a neural network implemented using the pytorch framework.
 
-We show that our attack performs as well or better than the current state-of-the-art results of Leino and Fredrikson [arXiv](https://arxiv.org/abs/1906.11798). Furthermore, we report on some interesting points which question the current understanding of membership inference attacks. For more details, refer to our paper: *coming soon*
+We show that our attack performs as well or better than the current state-of-the-art results of [Leino and Fredrikson](https://arxiv.org/abs/1906.11798). Furthermore, we report on some interesting points which question the current understanding of membership inference attacks. For more details, refer to our paper: *coming soon*
