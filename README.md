@@ -1,9 +1,25 @@
 # tree-mi-attack
-This repository contains code and data files of the project "Membership Inference Attack on Tree-based Models Leveraging Structural White-box Information".
+This repository contains codes, data files and results of the project "Membership Inference in Decision Forests: White-box Attacks vs. Generalization Error".
 
 ### Project Description:
-In this project, we implement membership inference attacks on tree-based models leveraging white-box information about the target model. Membership inference attacks exploit the model's stored information on it's training dataset to infer the membership of an instance. Formally, the adversary aims to predict whether a certain record, r, was used to train the target model, M, using some auxiliary knowledge. The adversary assumes white-box access to the target model.
+In this project, we implement membership inference attacks on non-parametric tree-based models leveraging white-box information about the target model. Membership inference attacks exploit the model's stored information on it's training dataset to infer the membership of an instance. Formally, the adversary aims to predict whether a certain record, r, was used to train the target model, M, using some auxiliary knowledge. The adversary assumes white-box access to the target model.
 
-The target model being attacked is a tree-based model, Random Forest. We implemented the Sklearn-RandomForestClassifier algorithm. The attack model is a neural network implemented using the pytorch framework.
+The target models being attacked are tree-based models, Random Forests and Gradient Boosting Machines. We implemented the Sklearn-RandomForestClassifier and GradientBoostingClassfier algorithm. The attack model is a neural network implemented using the pytorch framework.
 
-We show that our attack performs as well or better than the current state-of-the-art results of [Leino and Fredrikson](https://arxiv.org/abs/1906.11798). Furthermore, we report on some interesting points which question the current understanding of membership inference attacks. For more details, refer to our paper: *coming soon*
+We show that non-parametric models (RFs and GBMs) are as vulnerable to membership inference as comparably accurate parametric models (deep-net models) in prior literature. Furthermore, we evaluate the effect of number of estimators (trees) in random forests on membership inference vulnerability and show that with decreasing generalization error, attack accuracy increases. For more details, refer to our paper: *coming soon*
+
+### Project Dependencies
+```
+python 3.7
+jupyter notebook
+scikit-learn
+pytorch 1.5
+shap
+numpy
+pandas
+ipyparallel
+matplotlib
+pickle
+tqdm
+termcolor
+```
